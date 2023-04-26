@@ -6,6 +6,8 @@ import { data } from "../data/data";
 
 export function getAsteroidDataByName(data, asteroidName) {
   // Your code goes here...
+  const asteroid =  data.asteroids.filter(asteroid => asteroid.name.includes(asteroidName))
+  return asteroid[0];
 }
 
 
